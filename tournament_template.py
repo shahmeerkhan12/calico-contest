@@ -10,6 +10,8 @@ def solve(N: int, C: list, P: list) -> str:
     
     champ = C[P.index(max(P))]
     return champ
+# try this also
+    # return C[P.index(max(P))]
 
 
 def main():
