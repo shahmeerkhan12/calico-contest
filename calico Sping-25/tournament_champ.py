@@ -19,12 +19,12 @@ def solve(N: int, C: list, P: list) -> str:
               competitor1, competitor2 = comp_pairs[i],comp_pairs[i+1]
               
             # compare comp1 and comp2
-              if competitor1>competitor2:
+              if competitor1[1]>competitor2[1]:
                   # add powers
                   power = competitor1[1] + competitor2[1]
                   # update the nextRound with:
                   nextRound.append((competitor1[0],power))
-              elif competitor1<competitor2:
+              elif competitor1[1]<competitor2[1]:
                   power = competitor1[1] + competitor2[1]
                   nextRound.append((competitor2[0],power))
               else:
